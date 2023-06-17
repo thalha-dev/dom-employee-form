@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Employee Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>New Employees</h2>
+      <form class="emp-form">
+        <div class="emp-grid">
+          <div class="emp-field">
+            <label>Enter Name</label>
+            <input id="emp-name" type="text" name="name" />
+          </div>
+          <div class="emp-field">
+            <label>Enter Profession</label>
+            <input id="emp-profession" type="text" name="name" />
+          </div>
+          <div class="emp-field">
+            <label>Enter Age</label>
+            <input id="emp-age" type="number" name="name" />
+          </div>
+        </div>
+        <input id="emp-form-btn" type="submit" value="Add User" />
+      </form>
+      <p id="error-msg">
+        Error : Please Make sure All the fields before adding in an employee!
+      </p>
+      <p id="success-msg">Success : Employee Added!</p>
+      <h3>Added Employees</h3>
+      <p id="zero-emp">You have 0 Employees</p>
+      <div class="emp-details">
+        <div class="emp">
+          <div class="emp-detail">1 Name:John Profession:Developer Age:10</div>
+          <button class="delete-btn" type="button">Delete User</button>
+        </div>
+        <div class="emp">
+          <div class="emp-detail">2 Name:John Profession:Developer Age:10</div>
+          <button class="delete-btn" type="button">Delete User</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

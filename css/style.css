@@ -1,0 +1,86 @@
+/* GENERAL STYLES */
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: #000;
+  color: #bebebe;
+}
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+.container {
+  width: 95%;
+  margin: 3em auto;
+}
+
+.emp-grid {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(
+      100px,
+      1fr
+    );
+  gap: 3em;
+}
+
+.emp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.emp-form input {
+  background: #000;
+  color: #bebebe;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  align-items: center;
+  padding: 0.7em 1em;
+  font-size: 1rem;
+}
+.emp-form input[type="submit"] {
+  background: #fff;
+  color: #000;
+  border: 0;
+  margin: 2em 0;
+  padding: 0.7em 2em;
+}
+
+#error-msg {
+  color: #ef2244;
+  display: none;
+}
+
+#success-msg {
+  color: #22ef33;
+  display: none;
+}
+
+#zero-emp {
+  color: #7d8282;
+}
+
+.emp {
+  display: flex;
+  gap: 2em;
+}
+
+.emp-details {
+  display: none;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.emp-detail {
+  border: 1px solid #bebebe;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+}
+
+.delete-btn {
+  padding: 0.5em 2em;
+  border-radius: 15px;
+}
